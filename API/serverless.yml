@@ -13,3 +13,23 @@ functions:
           path: /
           method: get
           cors: true
+      - http:
+          path: /add/pation
+          method: get
+          cors: true
+      - http:
+          path: /getall
+          method: get
+          cors: true
+      - http:
+          path: /Add
+          method: post
+          cors: true   
+      - http:
+          path: /update
+          method: put
+          cors: true
+      - http:
+          path: /delete
+          method: delete
+          cors: true
