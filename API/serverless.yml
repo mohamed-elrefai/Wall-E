@@ -2,34 +2,34 @@ service: API
 frameworkVersion: '3'
 
 provider:
-  name: aws
-  runtime: nodejs14.x
+    name: aws
+    runtime: nodejs14.x
 
 functions:
-  hello:
-    handler: handler.handler
-    events:
-      - http:
-          path: /
-          method: get
-          cors: true
-      - http:
-          path: /add/pation
-          method: get
-          cors: true
-      - http:
-          path: /getall
-          method: get
-          cors: true
-      - http:
-          path: /Add
-          method: post
-          cors: true   
-      - http:
-          path: /update
-          method: put
-          cors: true
-      - http:
-          path: /delete
-          method: delete
-          cors: true
+    hello:
+        handler: handler.handler
+        events:
+            - http:
+                path: /
+                method: get
+                cors: true
+            - http:
+                path: /add/pation
+                method: get
+                cors: true
+            - http:
+                path: /getall
+                method: get
+                cors: true
+            - http:
+                path: /Add
+                method: post
+                cors: true   
+            - http:
+                path: /update
+                method: put
+                cors: true
+            - http:
+                path: /delete
+                method: delete
+                cors: true
