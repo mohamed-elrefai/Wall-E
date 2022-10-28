@@ -1,8 +1,4 @@
-const awsService = require('aws-serverless-express')
+const serverless = require("serverless-http");
 const app = require('./src/index')
 
-const server = awsService.createServer(app);
-
-exports.handler = (event, context) => {
-      return awsService.proxy(server, event, context);
-}
+module.exports.handler = serverless(app);
