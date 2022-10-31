@@ -9,38 +9,22 @@ const MeasurementsSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    O2: [
-        {
-            New:{
-                type: String,
-                required: true,
-            }
-        }
-    ],
-    blood_pressure:[
-        {
-            New:{
-                type: String,
-                required: true,
-            }
-        }
-    ],
-    diabetes:[
-        {
-            New:{
-                type: String,
-                required: true,
-            }
-        }
-    ],
-    hemoglobin:[
-        {
-            New:{
-                type: String,
-                required: true,
-            }
-        }
-    ]
+    O2: {
+        type: String,
+        required: true,
+    },
+    blood_pressure:{
+        type: String,
+        required: true,
+    },
+    diabetes:{
+        type: String,
+        required: true,
+    },
+    hemoglobin:{
+        type: String,
+        required: true,        
+    }
 }, {
     timestamps: true,
 })
